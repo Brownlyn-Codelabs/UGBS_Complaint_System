@@ -3,10 +3,10 @@
 body{
   font-family:"Gotham A", Gotham, "Gotham SSm A", "Gotham SSm B", "Gotham SSm", "Proxima Nova", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: lighter;
-
+ 
 }
 
-a,a:hover,a:focus,a:visited{color:#4db6ac;
+a,a:hover,a:focus,a:visited{color:#D2AB66;
   text-decoration: none!important;
 outline: 0px!important;}
 a:-webkit-any-link {
@@ -25,7 +25,7 @@ button{
 
 .cover{
   width:100%;
-  height: 260px;
+  height: 320px;
   background: #143e6f url('../img/admin.jpg');
   background-position: center center;
   background-size: cover;
@@ -38,7 +38,7 @@ p.pdd{
   margin-top: 160px;
 }
 .user{
-  background: #143e6f url('../img/userbg.jpg');
+  background: #143e6f url('../img/user.png');
   background-size: cover;
 }
 .admin{
@@ -67,6 +67,13 @@ p.pdd{
   float: left;
   text-align: center;
 }
+
+.padd a{
+  text-decoration: none;
+  color: #D2AB66;
+
+}
+
 input{
   border: 0px;
   border-radius: 10px;
@@ -79,6 +86,7 @@ input{
   font-size: 17px;
   background: #fff;
 }
+
 .dis_b{
   border: 0px;
   padding:10px;
@@ -105,11 +113,11 @@ button.log{
 
 }
 button.log:hover{
-  background: #334fdd;
+  background: #08203b;
 }
 
 textarea{
-  border: 0px;
+  border: 10px;
   padding-left:10px;
   background: #fff;
   width: 450px;
@@ -477,6 +485,7 @@ span.error{
   padding-left: 30px;
   padding-bottom: 20px;
   font-size: 17px;
+  color: #D2AB66;
 }
 .field-off{
     width:100%;
@@ -590,7 +599,6 @@ footer{
   background: #2b2834;
   position: relative;
   float: left;
-
   text-align: center;
   color: #fff;
 }
@@ -606,9 +614,24 @@ footer{
   text-align: right;
   color: #fff;
 }
+
 .foonav a{
   padding-left: 10px;
+  color: #fff;
+  float: right;
 }
+
+.foonav a:hover{
+  color: #13bbd7;
+ 
+}
+
+.copyright{
+  float: left;
+}
+
+
+
 
 
 .heading{

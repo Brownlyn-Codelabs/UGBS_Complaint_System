@@ -1,6 +1,4 @@
 <?php
-
-
   require 'core/session.php';
   require 'core/config.php';
   require 'core/redirect.php';
@@ -34,7 +32,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CPMS  </title>
+    <title>UGBS-CMS</title>
     <link rel="shortcut icon" href="files/img/ico.ico">
     <link rel="stylesheet" href="files/css/bootstrap.css">
     <link rel="stylesheet" href="files/css/custom.css">
@@ -72,6 +70,7 @@
               </form>
               <br>
                 Don't have an acccount ? <a href="signup.php">Sign Up  </a>
+                <br><br><br><br>
 
         </div>
       </div>

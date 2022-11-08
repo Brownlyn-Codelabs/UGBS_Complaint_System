@@ -3,9 +3,9 @@
 class MySqlDriver {
   private $link;
 	private $host = "localhost";
-	private $database = "cpmsphp";
-	private $username =  "root";
-	private $password = '';
+	private $database = "id19827211_cpmsphp";
+	private $username =  "id19827211_cpmsphp1";
+	private $password = 'nB6D<)/p]NH0c&Oy';
 
    function __construct($database=""){
 	   if (!empty($database)){ $this->database = $database; }
@@ -21,5 +21,5 @@ class MySqlDriver {
 $gLink=new MySqlDriver();
 
 
-$web_name = "Complaint Management System";
+$web_name = "UGBS IT Complaint System";
 ?>
