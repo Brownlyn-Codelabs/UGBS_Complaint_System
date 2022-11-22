@@ -17,7 +17,7 @@
 
           <li><a href="message.php">Message</a></li>
           <li role="separator" class="divider"></li>
-          <li><a href="logout.php" onClick="javascript:return confirm ('Are you really want to delete ?');">Logout</a></li>
+          <li><a href="logout.php" onClick="javascript:return confirm ('Are you really sure you want to log out?');">Logout</a></li>
         </ul>
       </div>
 </div>

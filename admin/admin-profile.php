@@ -32,7 +32,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CPMS  </title>
+    <title>UGBS-ICS</title>
     <link rel="shortcut icon" href="../files/img/ico.ico">
     <link rel="stylesheet" href="../files/css/bootstrap.css">
     <link rel="stylesheet" href="../files/css/custom.css">
@@ -50,7 +50,7 @@
       <?php
       if (isset($_SESSION['username'])===true) {echo "<h1> Welcome, ".$_SESSION['username']."</h1>";}
        ?>
-       <a class="button logout" href="../logout.php" onClick="javascript:return confirm ('Are you really want to delete ?');"> Logout </a>
+       <a class="button logout" href="../logout.php" onClick="javascript:return confirm ('Do you really want to log out?');"> Logout </a>
        &nbsp;&nbsp;&nbsp;
 
 
@@ -82,7 +82,7 @@
             </div>
 
             <div class="track vio">
-                Total Engineers <br> <p><?php echo $count_engi;?></p>
+                Total Technicians <br> <p><?php echo $count_engi;?></p>
             </div>
 
             <div class="track red">
@@ -120,7 +120,7 @@
              <div class="content">
                <div class="div_data">New User</div>
                <div class="div_data">New Message From</div>
-               <div class="div_data">New Engineer </div>
+               <div class="div_data">New Technician </div>
              </div>
               <div class="div_data vio">
                     <span><?php echo $new_user; ?></span>
@@ -182,7 +182,7 @@
 
 
     <footer>
-    <br><br>&copy <?php echo date("Y"); ?> <?php echo $web_name; ?>
+    <br><br>Copyright &copy <?php echo date("Y"); ?> <?php echo $web_name; ?>
     </footer>
 
     <script src="../files/js/jquery.js"></script>

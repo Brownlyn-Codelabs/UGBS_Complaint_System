@@ -39,7 +39,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `username`, `password`, `up_time`) VALUES
-(1, 'Will Williams', 'admin', 'admin', 'May, Saturday, 05:24 pm');
+(1, 'Daniel Brown', 'admin', 'admin', 'Nov, Saturday, 05:24 pm');
 
 -- --------------------------------------------------------
 
@@ -61,14 +61,9 @@ CREATE TABLE `circle` (
 --
 
 INSERT INTO `circle` (`id`, `name`, `username`, `email`, `password`, `date`) VALUES
-(1, 'Demo', 'demo', 'demo@demo.com', 'password', '2021-05-10'),
-(2, 'Liam Johnson', 'liam', 'liam@gmail.com', 'password', '2021-05-11'),
-(3, 'Erma Anderson', 'erma', 'erma@gmail.com', 'password', '2021-05-11'),
-(4, 'Jamie Morgan', 'jamie', 'jamie@gmail.com', 'password', '2021-05-11'),
-(5, 'Karen Owen', 'karen', 'karen@gmail.com', 'password', '2021-05-11'),
-(6, 'Charlie Bruce', 'charlie', 'charlie@gmail.com', 'password', '2021-05-11'),
-(7, 'Charles Rousseau', 'charles', 'charles58@gmail.com', 'password', '2021-05-11'),
-(8, 'George Carlson', 'george', 'george@gmail.com', 'password', '2021-05-11');
+(1, 'Joselyn', 'Joselyn', 'joselyn@demo.com', 'password', '2022-11-05'),
+(2, 'Ben', 'Ben', 'ben@gmail.com', 'password', '2022-11-11'),
+(3, 'Abena', 'abena', 'abena@gmail.com', 'password', '2022-11-03');   
 
 -- --------------------------------------------------------
 
@@ -93,8 +88,8 @@ CREATE TABLE `cmp_log` (
 --
 
 INSERT INTO `cmp_log` (`id`, `user_id`, `name`, `username`, `email`, `phone no`, `subject`, `complain`, `ref_no`) VALUES
-(1, 1, 'Demo', 'demo', 'demo@demo.com', '7854125400', 'Test 1', 'Test1 with demo', 1747926),
-(2, 2, 'Liam Johnson', 'liam', 'liam@gmail.com', '8520001269', 'Customer Services Department', 'Dear Sir/Madam, I\'ve recently ordered a new pair of soccer cleats (item #69694582) from your website last week (May 7th). I received the order on May 10th, but unfortunately when I opened it, I saw that the cleats were used. Cleats were dirty enough and there was a small tear in front part where the', 1845767),
+(1, 1, 'Joselyn', 'Joselyn', 'Joselyn@demo.com', '7854125400', 'Test 1', 'Test1 with demo', 1747926),
+(2, 2, 'Ben', 'Ben', 'Ben@gmail.com', '8520001269', 'Customer Services Department', 'Dear Sir/Madam, I\'ve recently ordered a new pair of soccer cleats (item #69694582) from your website last week (May 7th). I received the order on May 10th, but unfortunately when I opened it, I saw that the cleats were used. Cleats were dirty enough and there was a small tear in front part where the', 1845767),
 (3, 3, 'Erma Anderson', 'erma', 'erma@gmail.com', '1547800002', 'Complaint Letter To Company', 'I am disappointed with your company\'s service because the provided service was much unsatisfactory as . . . . . . . . . . . . . . . .', 689799),
 (4, 4, 'Jamie Morgan', 'jamie', 'jamie@gmail.com', '3540002158', 'Regarding Excessive Fees', 'Dear Sir/Madam, On May 10th I enrolled in a debt repayment plan with company. The purpose of the repayment plan was to help me repay my debts quickly and efficiently. Company\'s fee structure of explanation of fee structure is excessive and not in the best interest of the client. These fees were not ', 2993246),
 (5, 8, 'George Carlson', 'george', 'george@gmail.com', '3450002547', 'Regarding Services', 'Dear Sir/Madam, I bought an item (#ASTRO58_D7) last week, I\'ve also attached a copy of my receipt for your kind information. I\'m writing to you because the service was not carried out with necessary skill, care and diligence. Used materials were not of merchantable quality. I also rang and spoke to ', 1018191);
@@ -120,9 +115,9 @@ CREATE TABLE `dummy` (
 --
 
 INSERT INTO `dummy` (`id`, `name`, `user_name`, `email`, `post`, `password`, `time`) VALUES
-(1, 'Eng', 'eng', 'eng@gmail.com', 'Demo', 'password', '2021-05-11 13:25:23'),
-(2, 'Wendy Foster', 'wendy', 'wendy@gmail.com', 'CIM', 'password', '2021-05-11 14:39:14'),
-(3, 'John Russel', 'john', 'johnr@gmail.com', 'CSCP', 'password', '2021-05-11 14:41:51');
+(1, 'Abena', 'Abena', 'Abena@gmail.com', 'Pc Setup', 'password', '2021-05-11 13:25:23'),
+(2, 'Mr Eben', 'Eben', 'eben@gmail.com', 'Hardware', 'password', '2021-05-11 14:39:14'),
+(3, 'Mr Gabriel', 'Gabby', 'gabby@gmail.com', 'Software', 'password', '2021-05-11 14:41:51');
 
 -- --------------------------------------------------------
 
@@ -132,7 +127,7 @@ INSERT INTO `dummy` (`id`, `name`, `user_name`, `email`, `post`, `password`, `ti
 
 CREATE TABLE `posts` (
   `id` int(11) NOT NULL,
-  `subject` varchar(40) NOT NULL,
+  `subject` varchar(40) NOT NULL, 
   `story` text NOT NULL,
   `session_name` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

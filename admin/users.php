@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CPMS  </title>
+    <title>UGBS-ICS</title>
     <link rel="shortcut icon" href="../files/img/ico.ico">
     <link rel="stylesheet" href="../files/css/bootstrap.css">
     <link rel="stylesheet" href="../files/css/custom.css">
@@ -54,7 +54,7 @@
               $num_rows = mysql_num_rows($result);
             ?>
                 <div class='admin-data'>
-                  Registered Engineer
+                  Registered Technician
                   <span class='button view' href=''><?php echo "$num_rows";?></a>
                 </div><br><br><br><br><br>
             <?php
@@ -70,7 +70,7 @@
         </div>
     </div>
       <footer>
-      <br><br>&copy <?php echo date("Y"); ?> <?php echo $web_name; ?>
+      <br><br>Copyright &copy <?php echo date("Y"); ?> <?php echo $web_name; ?>
       </footer>
 
     <script src="../files/js/jquery.js"></script>

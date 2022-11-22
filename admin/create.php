@@ -11,7 +11,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CPMS  </title>
+    <title>UGBS-ICS</title>
     <link rel="shortcut icon" href="../files/img/ico.ico">
     <link rel="stylesheet" href="../files/css/bootstrap.css">
     <link rel="stylesheet" href="../files/css/custom.css">
@@ -21,22 +21,22 @@
   <?php require 'nav.php'; ?>
 
   <div class="cover main">
-    <h1>Add Engineer</h1>
+    <h1>Add Technician</h1>
   </div>
     <!--Users client-->
     <div class="div">
         <div class="col-lg-12">
           <div class="quotes">
-            <h2>Add Engineer</h2>
+            <h2>Add Technician</h2>
             
-            <p>Note: You can Register an Engineer account.</p>
+            <p>Note: You can Register a Technician account.</p>
           </div>
           <a class="button logout" href="../dummy-register.php"> Register</a>
         </div>
     </div>
 
       <footer>
-      <br><br>&copy <?php echo date("Y"); ?> <?php echo $web_name; ?>
+      <br><br> Copyright &copy <?php echo date("Y"); ?> <?php echo $web_name; ?>
       </footer>
 
     <script src="../files/js/jquery.js"></script>

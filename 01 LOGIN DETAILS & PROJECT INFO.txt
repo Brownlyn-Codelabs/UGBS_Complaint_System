@@ -1,11 +1,9 @@
-**Log on to codeastro.com for more projects!***
+**log on to https://github.com/Brownlyn-Codelabs for project files!***
 
-**Database Name: cpmsphp**
+**Database Name: UGBS-ICS**
 
-**Developed by Manash Bharali**
 
 **Recommended PHP Version 5.6.3**
-
 
 **Admin Login Details**
 
@@ -14,11 +12,11 @@ Password: admin
 
 **Customer Login Details**
 
-Email   : george@gmail.com
-Password: password
+Email   : Daniel@gmail.com
+Password: Daniel
 
-**Engineer Login Details**
+**Technician Login Details**
 
-Name    : John Russel
-Password: password
+Name    : gabriel
+Password: Gabby
 

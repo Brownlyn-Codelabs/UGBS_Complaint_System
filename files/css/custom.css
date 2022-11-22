@@ -6,7 +6,7 @@ body{
  
 }
 
-a,a:hover,a:focus,a:visited{color:#D2AB66;
+a,a:hover,a:focus,a:visited{color:#13bbd7;
   text-decoration: none!important;
 outline: 0px!important;}
 a:-webkit-any-link {
@@ -26,7 +26,7 @@ button{
 .cover{
   width:100%;
   height: 320px;
-  background: #143e6f url('../img/admin.jpg');
+  background: #143e6f url('../img/.jpg');
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -38,15 +38,15 @@ p.pdd{
   margin-top: 160px;
 }
 .user{
-  background: #143e6f url('../img/user.png');
+  background: #143e6f url('../img/.jpg');
   background-size: cover;
 }
 .admin{
-  background: #143e6f url('../img/admin.jpg');
+  background: #143e6f url('../img/.jpg');
   background-size: cover;
 }
 .dummy{
-  background: #143e6f url('../img/blog.png');
+  background: #143e6f url('../img/.png');
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -234,7 +234,7 @@ nav.admin ul li a svg{
 .admin-data{
   width:320px;
   height:70px;
-  border-left:5px solid #4db6ac;
+  border-left:5px solid #D2AB66;
   background: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -249,11 +249,11 @@ nav.admin ul li a svg{
 
 .admin-data:hover{
   background: #eee;
-  border-left:5px solid #7fe8de;
+  border-left:5px solid #e7bd76;
 
 }
 .view{
-  background:#4db6ac;
+  background:#D2AB66;
   float: right;
   padding: 10px 20px;
   margin-top: -30px;
@@ -272,13 +272,13 @@ nav.admin ul li a svg{
 .track{width: 255px;height: 200px;position: relative;float: left;  margin-left: 10px;
   color: #fff;font-size: 23px;text-align: center;padding-top: 50px;-webkit-transition: 0.3s;
   transition: 0.3s;
-  background:#4db6ac url('../img/back.png');
+  background:#113a68 url('../img/back.png');
   background-size: cover;
 }
 .track:hover{
   color:#fff;  margin-top: 30px;
 }
-.theme{background:#4db6ac;}
+.theme{background:#113a68;}
 .blue{background:#3498db;}
 .red{background:#FF7043;}
 .vio{background: #7E57C2;}
@@ -350,7 +350,7 @@ textarea.post{
 .view-data{
   width:100%;
   height:300px;
-  border-left:5px solid #4db6ac;
+  border-left:5px solid #D2AB66;
   background: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -360,6 +360,10 @@ textarea.post{
   margin-top: 30px;
   padding: 20px 10px 14px 20px;
   font-size: 20px;
+}
+
+.panel-body h2{
+  color: #D2AB66;
 }
 
 table{
@@ -373,7 +377,7 @@ td{
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   padding-left: 20px;
-  color:#0ea798;
+  color:#D2AB66;
 }
 table b{
   font-weight: lighter!important;
@@ -387,10 +391,11 @@ table b{
 .nav_u{
   width:100%;
   height: 56px;
-  background: #4db6ac!important;
+  background: #113a68;
   position: relative;
   float: left;
   z-index: 9999;
+  
 }
 .nav_u ul{
   list-style: none;
@@ -413,14 +418,14 @@ table b{
   text-align: center;
   font-size: 17px;
   color: #fff;
-  border-bottom: 4px solid #4db6ac;
+  border-bottom: 4px solid #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   display: block;
 }
 .nav_u ul li a:hover{
-  color: #fff;
-  border-bottom: 4px solid #fff;
+  color: #D2AB66;
+  border-bottom: 4px solid #D2AB66;
 }
 
 
@@ -522,8 +527,8 @@ h2{
 }
 
 
-/*engineer*/
-.eng{width:100%;height: 65px;background: #40C4FF;position: fixed;z-index: 999999;}
+/*technician*/
+.eng{width:100%;height: 65px;background: #113a68;position: fixed;z-index: 999999;}
 .eng li{list-style-type: none;padding: 0px;margin:0px;float: left;}
 .eng li a{
   padding: 20px 20px;
@@ -533,8 +538,8 @@ h2{
 
 }
 .eng li a:hover{
-  color: #40C4FF;
-  background:#FFF ;
+  color: #D2AB66;
+  background: #fff; ;
 }
 .quotes{
   border-style:dotted;
@@ -595,13 +600,15 @@ h2{
 
 footer{
   width: 100%;
-  height: 100px;
+  height: 80px;
   background: #2b2834;
   position: relative;
   float: left;
   text-align: center;
-  color: #fff;
+  color: #727272;
+  font-size: 14px;
 }
+
 .foonav{
   width: 100%;
   height: 50px;
@@ -610,9 +617,9 @@ footer{
   position: relative;
   padding-top: 15px;
   padding-right: 30px;
-  font-size: 17px;
+  font-size: 14px;
   text-align: right;
-  color: #fff;
+  color: #727272;
 }
 
 .foonav a{
@@ -628,7 +635,19 @@ footer{
 
 .copyright{
   float: left;
+  margin-left: 20px;
+  color: #727272;
 }
+
+.copyright a{
+ color: #fff;
+ text-decoration: none;
+}
+
+.copyright a:hover{
+  color: #13bbd7;
+ }
+
 
 
 
@@ -850,6 +869,7 @@ footer{
   animation-name: flash;
 }
 
+/*Credits from BrownlynCodelabs*/
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @keyframes pulse {

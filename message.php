@@ -12,7 +12,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CPMS  </title>
+    <title>UGBS-ICS</title>
     <link rel="shortcut icon" href="files/img/ico.ico">
     <link rel="stylesheet" href="files/css/bootstrap.css">
     <link rel="stylesheet" href="files/css/custom.css">
@@ -23,7 +23,7 @@
       border-top: 0px solid #eee;
       border-bottom: 0px solid #eee!important;
       padding-left: 0px;
-      color:#0ea798;
+      color:#D2AB66;
     }
     input,button.log{width: 450px;}
     </style>
@@ -62,7 +62,7 @@
             <div class="container">
               <div class="panel panel-default">
                   <div class="panel-body">
-                      <h2>Your Refference no : &nbsp;&nbsp;&nbsp;&nbsp;<?php echo $ref;
+                      <h2>Your Reference no : &nbsp;&nbsp;&nbsp;&nbsp;<?php echo $ref;
                       echo"<p><span class='error'>".$error."</p></span>";
                       echo "<p><span class='message'>".$message."</p></span>";
                       ?></h2>
@@ -70,7 +70,7 @@
               </div>
               <table>
                 <tr>
-                  <td class="text-left">Your Refference no</td>
+                  <td class="text-left">Your Reference no</td>
                   <td class="text-left"><div class="dis_b"><?php echo $ref;  ?></div></td>
                 </tr>
                 <tr>
@@ -82,7 +82,7 @@
                   <td class="text-left"><div class="dis_b"><?php echo $alpha.$id;  $user_id = $id;?></div></td>
                 </tr>
                 <tr>
-                  <td class="text-left">Your Your Email ID</td>
+                  <td class="text-left">Your Email ID</td>
                   <td class="text-left"><div class="dis_b"><?php echo $email;?></div></td>
                 </tr>
                 <tr>
@@ -109,7 +109,7 @@
       </div>
     </div>
       <footer>
-            <br><br>&copy <?php echo date("Y"); ?> <?php echo $web_name; ?>
+            <br><br>copyright &copy <?php echo date("Y"); ?> <?php echo $web_name; ?>
       </footer>
     <script src="files/js/jquery.js"></script>
     <script src="files/js/bootstrap.min.js"></script>

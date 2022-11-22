@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CPMS  </title>
+    <title>UGBS-ICS</title>
     <link rel="shortcut icon" href="../files/img/ico.ico">
     <link rel="stylesheet" href="../files/css/bootstrap.css">
     <link rel="stylesheet" href="../files/css/custom.css">
@@ -28,7 +28,7 @@
 
     <div class="cover main" style="top:50px;">
       <?php if (isset($eng_session)===true) {echo "<h1> Welcome, ".$eng_session."</h1>";}
-       ?><a class="wid" href="../logout.php" onClick="javascript:return confirm ('Are you really want to delete ?');"> Logout </a>
+       ?><a class="wid" href="../logout.php" onClick="javascript:return confirm ('Do you really want to logout ?');"> Logout </a>
 
        <p class="text-right">
           <?php echo date("d M , l "); ?>
@@ -65,7 +65,7 @@
                   Users <br> <p><?php echo $count_users;?></p>
               </div>
               <div class="track vio">
-                  Engineers <br> <p><?php echo $count_engi;?></p>
+                  Technicians <br> <p><?php echo $count_engi;?></p>
               </div>
               <div class="track red">
                   Complaints <br> <p><?php echo $count_cmp;?></p>
@@ -142,15 +142,15 @@
         </div>
         <br><br>
 
-        <div class="content">
+        <!-- <div class="content">
           <div class="jumbotron india_cover"></div>
-        </div>
+        </div> -->
 
 
     </div>
   </div>
     <footer>
-    <br><br>&copy <?php echo date("Y"); ?> <?php echo $web_name; ?>
+    <br><br>Copyright &copy <?php echo date("Y"); ?> <?php echo $web_name; ?>
     </footer>
 
     <script src="../files/js/jquery.js"></script>

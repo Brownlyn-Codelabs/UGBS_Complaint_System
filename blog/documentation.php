@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>CPMS  </title>
+      <title>UGBS-ICS</title>
       <link rel="shortcut icon" href="../files/img/ico.ico">
       <link rel="stylesheet" href="../files/css/bootstrap.css">
       <link rel="stylesheet" href="../files/css/custom.css">
@@ -26,7 +26,7 @@
   <div class="animated fadeIn">
     <header class="custom_header">
 
-        <h1>Complaint Management System</h1>
+        <h1>University Of Ghana Business School, IT Complaint System</h1>
         <p>We aim to provide an excellent and consistent service to all our customers through our customer promise.</p>
     </header>
 
@@ -91,7 +91,7 @@
 
   </div>
     <footer>
-      <br><br>&copy <?php echo date("Y"); ?> <?php echo $web_name; ?>
+      <br><br>Copyright &copy <?php echo date("Y"); ?> <?php echo $web_name; ?>
     </footer>
 
     <script src="../files/js/jquery.js"></script>
