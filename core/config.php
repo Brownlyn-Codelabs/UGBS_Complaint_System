@@ -3,9 +3,9 @@
 class MySqlDriver {
   private $link;
 	private $host = "localhost";
-	private $database = "id19827211_cpmsphp";
-	private $username =  "id19827211_cpmsphp1";
-	private $password = 'nB6D<)/p]NH0c&Oy';
+	private $database = "ugbs-ics";
+	private $username =  "root";
+	private $password = '';
 
    function __construct($database=""){
 	   if (!empty($database)){ $this->database = $database; }

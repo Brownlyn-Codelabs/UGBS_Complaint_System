@@ -47,14 +47,20 @@
                  }
                    if(empty($_POST)===false){
                      $phoneno =mysql_real_escape_string($_POST['phoneno']);
+                      $cat = mysql_real_escape_string($_POST['category']);
                      $subject = mysql_real_escape_string($_POST['subject']);
                      $complain = mysql_real_escape_string($_POST['complain']);
-                     if(empty($phoneno) || empty($subject) || empty($complain)){
+                     $floor = mysql_real_escape_string($_POST['floor']);
+                     $room_no = mysql_real_escape_string($_POST['room_no']);
+                     $status = mysql_real_escape_string($_POST['status']);
+                      
+                     if(empty($phoneno) || empty($cat) || empty($subject) || empty($complain) || empty($floor) || empty($room_no)){
+                        $message = "All Fields are required";
                      }elseif (!preg_match("/^[0-9]*$/",$phoneno)) {
                        $error = "Invalid Phone Number";
                      }else{
-                       mysql_query("INSERT INTO `cmp_log` VALUES ('0','$id','$name','$username','$email','$phoneno','$subject','$complain','$ref')") or die(mysql_error());
-                       $message = "Your Complain has been Registerd";
+                       mysql_query("INSERT INTO `cmp_log`(`id`, `user_id`, `name`, `username`, `email`, `phone no`, `category`, `subject`, `complain`, `floor`, `room_no`, `ref_no`, `status`) VALUES ('0','$id','$name','$username','$email','$phoneno', '$cat', '$subject','$complain', '$floor', '$room_no','$ref','$status')") or die(mysql_error());
+                       $message = "Your Complain has been Registered";
                        }
                    }
               ?>
@@ -73,22 +79,38 @@
                   <td class="text-left">Your Reference no</td>
                   <td class="text-left"><div class="dis_b"><?php echo $ref;  ?></div></td>
                 </tr>
+
+                <?php
+                // Use a constant in the format parameter
+                echo date(DATE_RFC822) . "<br> <br>" ;
+
+                    ?>
                 <tr>
                   <td class="text-left">Your Username</td>
                   <td class="text-left"><div class="dis_b"><?php echo $username;?></div></td>
                 </tr>
-                <tr>
-                  <td class="text-left">Your User ID</td>
-                  <td class="text-left"><div class="dis_b"><?php echo $alpha.$id;  $user_id = $id;?></div></td>
-                </tr>
-                <tr>
-                  <td class="text-left">Your Email ID</td>
-                  <td class="text-left"><div class="dis_b"><?php echo $email;?></div></td>
-                </tr>
+              
+
                 <tr>
                   <td class="text-left">Your Contact Number *</td>
                   <td><input type = "text" name = "phoneno" maxlength=10 placeholder = "Your Phone number">  </td>
                 </tr>
+
+                <tr>
+                  <td class="text-left">Category *</td>
+                  <td><select maxlength=10 name="category" id="category">
+                      <option value="">   -- Select a category --   </option>
+                      <option value="Software">Software</option>
+                      <option value="Hardware">Hardware</option>
+                      <option value="Internet">Internet</option>
+                      <option value="Printer">Printer</option>
+                      <option value="Other">Other</option>
+                      </select> 
+                  </td>
+                </tr>
+                
+
+                
                 <tr>
                   <td class="text-left">Your Subject *</td>
                   <td><input type="text" name = "subject" placeholder = "Subject"></td>
@@ -97,8 +119,28 @@
                   <td class="text-left">Your Complain *</td>
                   <td><textarea name="complain" rows="8" cols="80" placeholder="Your complain"></textarea></td>
                 </tr>
-                <tr><td></td><td></td></tr>
+
                 <tr>
+                <td class="text-left">Floor *</td>
+                  <td><select maxlength=10 name="floor" id="floor">
+                      <option value="">   -- Select Floor --   </option>
+                      <option value="Ground Floor">Ground Floor</option>
+                      <option value="First Floor">First Floor</option>
+                      <option value="Second Floor">Second Floor</option>
+                      <option value="Third Floor">Third Floor</option>
+                      </select> 
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="text-left">Your Room Number *</td>
+                  <td><input type="text" name = "room_no" placeholder = "Room no"></td>
+                </tr>
+
+                
+                
+                <tr><td></td><td><input type="hidden" name="status" value="0"></td></tr>
+                <tr>  
                   <td></td>
                   <td><button type="submit" class="log">Submit</button></td>
                 </tr>

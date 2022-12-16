@@ -21,19 +21,20 @@
   <body>
 
       <div class="cover">
-        <nav class="nav_u">
-        
-          <ul>
-          <li><a href="profile.php">Home</a></li>
-            <li><a href="message.php">Add Complaints</a></li>
-          <li><a href="logout.php" onClick="javascript:return confirm ('Are you sure you want to log out?');">Logout</a></li>
-            
-          </ul>
-          
+      <nav class="navbar nav_u">
+ 
+    <ul>
+    <li><a href="profile.php">Home</a></li>
+      <li><a href="message.php">Add Complaints</a></li>
+      <li><a href="mycmp.php">My Complaints</a></li>
+    <li><a href="logout.php" onClick="javascript:return confirm ('Are you sure you want to log out?');">Logout</a></li>
+      
+    </ul>
+    
 
-          
-        
-        </nav>
+    
+
+  </nav>
 
         <p class="text-right pdd">
            <?php echo date("d M , l "); ?>

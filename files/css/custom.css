@@ -29,7 +29,7 @@ button{
   background: #143e6f url('../img/.jpg');
   background-position: center center;
   background-size: cover;
-  position: relative;
+  position: relative;   
   float: left;
   z-index: 999;
   color: #fff;
@@ -136,7 +136,7 @@ span.red{
 /*admin*/
 .main {
   padding-top: 90px;
-  padding-left: 260px;
+  padding-left: 260px !important;
   padding-right: 30px;
   color:#fff;
 }

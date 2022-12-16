@@ -61,7 +61,7 @@
       <h1>General Settings</h1>
     </div>
     <div class="div">
-          <div class = "col-lg-12">
+          <div class = "col-lg-12 col-12">
             <form class="" action="" method="post" autocomplete="off">
                   <?php
                   $query1=mysql_query("SELECT * FROM admin WHERE id='1'");

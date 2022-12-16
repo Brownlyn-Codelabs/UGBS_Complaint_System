@@ -25,7 +25,7 @@
   </div>
     <!--Users client-->
     <div class="div">
-        <div class="col-lg-12">
+        <div class="col-lg-12 col-12">
           <div class="quotes">
             <h2>Add Technician</h2>
             

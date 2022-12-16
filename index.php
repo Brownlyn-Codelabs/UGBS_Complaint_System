@@ -66,7 +66,8 @@
                 <br><br>
                 <button type="submit" class="log">Login</button>
                 <br><br>
-                <span class="red"><?php echo $message; ?></span>
+                <div class="row"></div>
+                <span class=" red"><?php echo $message; ?></span> 
               </form>
               <br>
                 Don't have an acccount ? <a href="signup.php">Sign Up  </a>

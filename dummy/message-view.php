@@ -57,30 +57,40 @@
            <br><br><br>
           <table>
             <?php
-              $query1=mysql_query("SELECT * FROM `view_cmp` WHERE id='$id'");
+
+           
+            if(isset($_POST['status'])){
+              $status_id = $_POST['status'];
+
+              $sql = mysql_query("UPDATE `view_cmp` SET `status`= $status_id WHERE id='$id'");
+                        
+            }
+
+            $status_text = "";
+            
+              $query1=mysql_query("SELECT * FROM `view_cmp` WHERE `id`='$id'");
               while( $arry=mysql_fetch_array($query1) ) {
 
 
                 $user_id = $arry['user_id'];
                 $name = $arry['name'];
-              #  $username = $arry['username'];
+                $username = $arry['username'];
                 $email = $arry['email'];
                 $phone_no = $arry['phone no'];
                 $subject = $arry['subject'];
                 $complain = $arry['complain'];
                 $ref = $arry['ref_no'];
+              
+                $status = $arry['status'];
+
+                $sql = mysql_query("UPDATE  `cmp_log` SET `status` = $status WHERE `ref_no`=$ref") ; 
               }
 
                  echo "<tr> <td> <b> Message Id </b> </td>";
                  echo "     <td> ".$id."</td> </tr>";
 
-
-
-
                  echo "<tr> <td> <b> Name </b> </td>";
                  echo "     <td> ".$name."</td> </tr>";
-
-
 
                  echo "<tr> <td> <b> Phone no </b> </td>";
                  echo "     <td> ".$phone_no."</td> </tr>";
@@ -91,10 +101,40 @@
                  echo "<tr> <td> <b> Complain </b> </td>";
                  echo "     <td> ".$complain."</td></tr>";
 
-                 echo "<tr> <td> <b> Refference </b> </td>";
+                 echo "<tr> <td> <b> Reference </b> </td>";
                  echo "     <td> ".$ref."</td></tr>";
+
+
+                 if($status == 0){
+                  $status_text = "Not Processed yet";
+               }
+               if($status == 1){
+                  $status_text = "Pending";
+               }
+               if($status == 2) {
+                $status_text = "Done";
+              }
+
+                 echo "<tr> <td> <b> Status </b> </td>";
+                 echo "     <td> ".$status_text."</td></tr>";
+
+                 
+
             ?>
             </table>
+
+            <br><br>
+
+            <div class="container">
+              <form action="" method="post">
+            <button type="submit" value="0" class="btn btn-danger" name="status">Not Processed yet</button> &nbsp; 
+             <button type="submit" value="1" class="btn btn-warning" name="status">Pending</button> &nbsp;
+              <button type="submit" value="2" class="btn btn-success" name="status">Done</button>
+              </form>
+            </div>
+
+
+
 
 
 

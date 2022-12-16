@@ -61,7 +61,7 @@
     </div>
 
     <div class="div">
-      <div class="col-lg-12">
+      <div class="col-lg-12 col-12">
           <div class="analysis">
             <?php
               $engi = mysql_query("SELECT * FROM `dummy`");

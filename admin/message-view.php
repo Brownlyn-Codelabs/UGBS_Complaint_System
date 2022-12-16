@@ -32,7 +32,7 @@
     <h1>Messages</h1>
   </div>
     <div class="div">
-        <div class="col-lg-12 ">
+        <div class="col-lg-12 col-12">
 
           <?php
           echo "<a class='button logout' href ='m_delete.php?id=$id' onClick=\"javascript:return confirm ('Are you sure you want to log out?');\">Delete</a>";
@@ -41,6 +41,8 @@
            <br><br><br><br>
           <table>
           <?php
+            $status_text ="";
+
             $query1=mysql_query("SELECT * FROM `cmp_log` WHERE id='$id'");
             while( $arry=mysql_fetch_array($query1) ) {
 
@@ -53,6 +55,7 @@
               $subject = $arry['subject'];
               $complain = $arry['complain'];
               $ref = $arry['ref_no'];
+              $status = $arry['status'];
             }
 
                echo "<tr> <td> <b> Message Id </b> </td>";
@@ -76,8 +79,20 @@
                echo "<tr> <td> <b> Complain </b> </td>";
                echo "     <td> ".$complain."</td></tr>";
 
-               echo "<tr> <td> <b> Refference </b> </td>";
+               echo "<tr> <td> <b> Reference </b> </td>";
                echo "     <td> ".$ref."</td></tr>";
+
+               if($status == 0){
+                $status_text = "Not Processed yet";
+             }
+             if($status == 1){
+                $status_text = "Pending";
+             }
+             if ($status == 2) {
+              $status_text = "Done";
+              }
+               echo "<tr> <td> <b> Status </b> </td>";
+               echo "     <td> ".$status_text."  </td>";
           ?>
           </table>
 

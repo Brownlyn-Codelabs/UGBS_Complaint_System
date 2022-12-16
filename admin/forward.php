@@ -53,6 +53,8 @@
      <br><br>
  <table>
  <?php
+ $status_text = "";
+
    $query1=mysql_query("SELECT * FROM `cmp_log` WHERE id='$id'");
    while( $arry=mysql_fetch_array($query1) ) {
 
@@ -65,6 +67,7 @@
      $subject = $arry['subject'];
      $complain = $arry['complain'];
      $ref = $arry['ref_no'];
+     $status = $arry['status'];
 
    }
 
@@ -89,8 +92,21 @@
       echo "<tr> <td> <b> Complain </b> </td>";
       echo "     <td> ".$complain."</td></tr>";
 
-      echo "<tr> <td> <b> Refference </b> </td>";
+      echo "<tr> <td> <b> Reference </b> </td>";
       echo "     <td> ".$ref."</td></tr>";
+
+      if($status == 0){
+        $status_text = "Not Processed Yet";
+      }
+      elseif($status == 1){
+        $status_Text = "Pending";
+      }
+      else{
+        $status_text = "Done";
+      }
+
+      echo "<tr> <td> <b> Status </b> </td>";
+      echo "     <td> ".$status_text."</td></tr>";
 
  ?>
  </table>
@@ -104,6 +120,8 @@
  $subject_e = mysql_real_escape_string($subject);
  $complain_e = mysql_real_escape_string($complain);
  $ref_e = mysql_real_escape_string($ref);
+ $status_e = mysql_real_escape_string($status);
+ 
 
 
  if(empty($_POST)===false){
@@ -125,7 +143,7 @@
          </div>";
 
        }else{
-         mysql_query("INSERT INTO `view_cmp` VALUES ('0','$ref_e','$name_e','$email_e','$phone_no_e','$subject_e','$complain_e','$id_d')") or die(mysql_error());
+         mysql_query("INSERT INTO `view_cmp` VALUES ('0','$ref_e','$name_e','$email_e','$phone_no_e','$subject_e','$complain_e','$id_d', '$status_e')") or die(mysql_error());
 
          $message =   "<div class='alert succ' id='msg'>
          <div class ='text-right' id='close'>
@@ -133,7 +151,7 @@
              <path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/>
              <path d='M0 0h24v24H0z' fill='none'/>
          </svg>
-           <p class='text-center'>Message successfully sent to the selected Tecchnician</p>
+           <p class='text-center'>Message successfully sent to the selected Technician</p>
          </div> </div>";
        }
    }else{

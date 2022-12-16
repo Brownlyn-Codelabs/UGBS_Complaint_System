@@ -26,7 +26,7 @@
   </div>
     <!--Users client-->
     <div class="div">
-        <div class="col-lg-12 ">
+        <div class="col-lg-12 col-12 ">
           <?php
             $result = mysql_query("SELECT * FROM `circle`");
             $num_rows = mysql_num_rows($result);
@@ -48,7 +48,7 @@
 
         <div class="baro"></div>
       <!--Engineers-->
-          <div class="col-lg-12 ">
+          <div class="col-lg-12 col-12 ">
 
             <?php $result = mysql_query("SELECT * FROM `dummy`");
               $num_rows = mysql_num_rows($result);
